@@ -13,7 +13,8 @@ public class Test08 {
         RandomAccessFile raf = new RandomAccessFile("raf.dat","rw");
         raf.writeInt(Integer.MAX_VALUE);
         raf.writeLong(Long.MAX_VALUE);
-        raf.seek(0);
+        System.out.println(raf.getFilePointer());
+        raf.seek(0l);
 
         int i = raf.readInt();
         long l = raf.readLong();
