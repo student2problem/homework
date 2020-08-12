@@ -29,6 +29,13 @@ public class Emp implements Serializable {
     private int salary;
     private Date hiredate;
 
+    public Emp(String name, int age, String gender, int salary, Date hiredate) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.salary = salary;
+        this.hiredate = hiredate;
+    }
 
     @Override
     public boolean equals(Object o) {
